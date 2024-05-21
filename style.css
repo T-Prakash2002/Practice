@@ -1,0 +1,10 @@
+body{
+    display: grid;
+    place-content: center;
+}
+h1{
+    background-image: url(./image/fire.gif);
+    /* background-image: url(./Animation.jpg); */
+    -webkit-background-clip: text;
+    color:transparent;
+}
