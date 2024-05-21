@@ -55,14 +55,17 @@
 // console.log(4);
 // check()
 // console.log(8)
-
-const users=[{
-    brand:"samsung",
-    model:"galaxy m33"
-}]
-
-console.table(users)
-
-
+// 
+// const users=[{
+//     brand:"samsung",
+//     model:"galaxy m33"
+// }]
+// 
+// console.table(users)
+// 
+// 
+// var a;
+// console.log(a);
+// a=5//undefined
 
 
