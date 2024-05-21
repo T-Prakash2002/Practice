@@ -2,9 +2,8 @@ body{
     display: grid;
     place-content: center;
 }
-h1{
-    background-image: url(./image/fire.gif);
-    /* background-image: url(./Animation.jpg); */
-    -webkit-background-clip: text;
-    color:transparent;
+h1,p{
+    font-size: clamp(24px,4vw,40px);
 }
+
+
