@@ -22,7 +22,7 @@
 // const sayFunc=sayName.bind(obj3,"cf3")
 // 
 // console.log(sayFunc())
-
+// 
 // const market=[
 //     {
 //         shop_name:"Shop1",
@@ -39,39 +39,84 @@
 //     }
 //     this.show()
 // }
-
 // for(let i=0;i<market.length;i++){
 //     printMarkets.call(
 //         market[i]
 //     )
 // }
+// const arr=[1,2,3]
+// const ele=[4,5,6]
+// 
+// arr.push.apply(arr,ele)
+// 
+// console.log(arr)
+// 
+// function add(num){
+//     num+5
+// }
+// function sub(num){
+//     num-3
+// }
+// function mul(num){
+//     num*3
+// }
+// 
+// const iterator=calculate(add,sub,mul)
+// console.log(iterator(7));
+// 
+// function calculate(...funcs){
+//     return function (firstNum){
+//         let res=firstNum
+//         for(let i=funcs.length-1;i>=0;i--){
+//             res=funcs[i](res)
+//         }
+//         return res
+//     }
+// }
+// 
+// var obj = {
+//     name:  "vivek",
+//     getName: function(){
+//     console.log(this);
+//   }
+// }
+//    
+// obj.getName();
 
-const arr=[1,2,3]
-const ele=[4,5,6]
 
-arr.push.apply(arr,ele)
+const arr=[{},'2','Hello']
 
-console.log(arr)
+delete arr[2]
 
-function add(num){
-    num+5
+console.log(arr) //[ {}, '2', <1 empty item> ]
+
+async function getlion(){
+    return "O"
 }
-function sub(num){
-    num-3
-}
-function mul(num){
-    num*3
-}
 
-const iterator=calculate(add,sub,mul)
-console.log(iterator(7));
+const lion = getlion()
 
-function calculate(...funcs){
-    return function (firstNum){
-        let res=firstNum
-        for(let i=funcs.length-1;i>=0;i--){
-            res=funcs[i](res)
-        }
-        return res
+console.log(lion);
+
+console.log(lion == "O");
+
+class lan {
+    static lib = 'vue'
+    lib = 'React'
+    log() {
+        console.log(this.lib);
+    }
+
+    static log() {
+        console.log(this.lib);
+
     }
 }
+
+const obj = new lan();
+obj.log();
+
+lan.log();
+
+
+
